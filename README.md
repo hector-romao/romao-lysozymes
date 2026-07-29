@@ -32,8 +32,8 @@ Run the scripts in the following order:
 
 ### 1. Tree rescaling
 ```r
-source("rescale_tree_C-type.R")
-source("rescale_tree_I-type.R")
+Rscript rescale_tree_C-type.R
+Rscript rescale_tree_I-type.R
 ```
 
 These scripts rescale the phylogenetic tree for C-type and I-type analyses,
@@ -41,7 +41,7 @@ and save the rescaled trees to the working directory.
 
 ### 2. PGLS analysis
 ```r
-source("pgls_analysis.R")
+Rscript pgls_analysis.R
 ```
 
 Runs the PGLS regressions and outputs summary tables and figures.
