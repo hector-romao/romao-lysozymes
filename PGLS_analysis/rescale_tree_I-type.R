@@ -10,8 +10,8 @@ library(OUwie)
 ############################ Read tree and dataset #############################
 ################################################################################
 
-tree <- read.tree(here("data", "ultrametric_tree.nwk"))
-dat  <- read.csv(here("data","i_type_input_data.csv"), stringsAsFactors = FALSE)
+tree <- read.tree(here("PGLS_analysis","data", "ultrametric_tree.nwk"))
+dat  <- read.csv(here("PGLS_analysis","data","i_type_input_data.csv"), stringsAsFactors = FALSE)
 
 ################################################################################
 ############################ Check species matching ############################
