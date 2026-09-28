@@ -14,9 +14,10 @@ library(ggtree)
 
 
 ##Data
-traits <- read.table("C:/Users/Notbook/Desktop/doutorado/disciplinas/Metodos filogeneticos comparativos/Projeto/grupo_3-MCP/data/insecta_traits.tsv", h = T, row.names = 1)
+traits <- read.table(here("Morans_I","data", "insecta_traits.tsv", h = T, row.names = 1)
 head(traits)
-phy <- read.tree("C:/Users/Notbook/Desktop/doutorado/disciplinas/Metodos filogeneticos comparativos/Projeto/grupo_3-MCP/data/insecta_tree.txt")
+phy <- read.tree(here("Morans_I","data", "insecta_tree.txt", h = T, row.names = 1)
+                     
 
 c_type_count <- as.matrix(traits[, 1])
 i_type_count <- as.matrix(traits[, 2])
