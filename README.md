@@ -7,7 +7,7 @@ Code and data to reproduce the PGLS analyses in: "Duplication, Loss, and Feeding
 ## Repository structure
 ```
 .
-├──Supplementary_material #Supplementary figures in high quality
+├──supplementary_material #Supplementary figures in high quality
 ├──supporting_data   #Folder with the aligments used to perform the analyses
 ├──Morans_I
 ├──── morans_I.R #Estimation of the Moran's I value
@@ -18,7 +18,7 @@ Code and data to reproduce the PGLS analyses in: "Duplication, Loss, and Feeding
 ├── data/                        # Input data files
 ├──── c_type_input_data.csv; i_type_input_data.csv: Input data with the regimes for each species used to the rescale the tree branches
 ├──── pgls_c_type_input_data_adults.csv; pgls_c_type_input_data_larave.csv; pgls_i_type_input_data_adults.csv; pgls_i_type_input_data_larave.csv: Input data with the gene count and diet for each species analysed
-├──── ultrametric.nwk: Ultramerized tree
+├──── ultrametric_tree.nwk: Ultramerized tree
 ├── pgls_analysis.R              # Phylogenetic generalized least squares (PGLS) analysis
 ├── rescale_tree_C-type.R        # Phylogenetic tree rescaling – C-type
 ├── rescale_tree_I-type.R        # Phylogenetic tree rescaling – I-type
@@ -28,7 +28,7 @@ Code and data to reproduce the PGLS analyses in: "Duplication, Loss, and Feeding
 ## Requirements
 
 - **R** (≥ 4.0.0) — [Download](https://cran.r-project.org/)
-- R packages: OUwie, phytools, ape, ggtree, geiger, phylosignal, picarte, adephylo, phylolm, TreeSim and nlme
+- R packages: OUwie, phytools, ape, ggtree, geiger, phylosignal, picante, adephylo, phylolm, TreeSim,phylobase, caper and here.
 
 > Adjust the package list to match what your scripts actually use.
 
@@ -65,4 +65,4 @@ No additional downloads are required.
 
 ## License
 
-This project is licensed under the MIT License — see [LICENSE](LICENSE) for details.
+This project is licensed under the MIT License.
