@@ -28,7 +28,7 @@ Code and data to reproduce the PGLS analyses in: "Duplication, Loss, and Feeding
 ## Requirements
 
 - **R** (≥ 4.0.0) — [Download](https://cran.r-project.org/)
-- R packages: OUwie, phytools, ape and nlme
+- R packages: OUwie, phytools, ape, ggtree, geiger, phylosignal, picarte, adephylo, phylolm, TreeSim and nlme
 
 > Adjust the package list to match what your scripts actually use.
 
@@ -51,6 +51,12 @@ Rscript pgls_analysis.R
 ```
 
 Runs the PGLS regressions and outputs summary tables and figures.
+
+### 3. Moran's I estimation
+
+```r
+Rscript morans_I.R
+```
 
 ## Data
 
