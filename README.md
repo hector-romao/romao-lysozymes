@@ -8,6 +8,12 @@ Code and data to reproduce the PGLS analyses in: "Duplication, Loss, and Feeding
 ```
 .
 ├──Supplementary_material #Supplementary figures in high quality
+├──supporting_data   #Folder with the aligments used to perform the analyses
+├──Morans_I
+├──── morans_I.R #Estimation of the Moran's I value
+├── data/
+├──── insecta_traits.tsv   #Input data with the number of copies of both C and I type lysozymes
+├──── insecta_tree.txt     #Ultramerized tree
 ├──PGLS_analysis
 ├── data/                        # Input data files
 ├──── c_type_input_data.csv; i_type_input_data.csv: Input data with the regimes for each species used to the rescale the tree branches
