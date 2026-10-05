@@ -14,9 +14,9 @@ library(ggtree)
 
 
 ##Data
-traits <- read.table(here("Morans_I","data", "insecta_traits.tsv", h = T, row.names = 1))
+traits <- read.table(here("Morans_I","data", "insecta_traits.tsv"), h = T, row.names = 1)
 head(traits)
-phy <- read.tree(here("Morans_I","data", "insecta_tree.txt", h = T, row.names = 1))
+phy <- read.tree(here("Morans_I","data", "insecta_tree.txt"), h = T, row.names = 1)
                      
 
 c_type_count <- as.matrix(traits[, 1])
@@ -59,9 +59,9 @@ Ip <- numeric()
 for (i in 1:(length(klim) - 1)) {
   W <- ifelse(dist > klim[i] & dist < klim[i + 1], 1, 0)
   diag(W) <- 0
-  I <- Moran.I(log_c_type_count, W)
+  I_c <- Moran.I(log_c_type_count, W)
   Im_c[i] <- I$observed
-  Ip[i] <- I$p.value
+  Ip[i] <- I_c$p.value
 }
 
 Im_i <- numeric()
@@ -69,9 +69,9 @@ Im_i <- numeric()
 for (i in 1:(length(klim) - 1)) {
   W <- ifelse(dist > klim[i] & dist < klim[i + 1], 1, 0)
   diag(W) <- 0
-  I <- Moran.I(log_i_type_count, W)
+  I_i <- Moran.I(log_i_type_count, W)
   Im_i[i] <- I$observed
-  Ip[i] <- I$p.value
+  Ip[i] <- I_i$p.value
 }
 
 par(mfrow = c(2, 1),
