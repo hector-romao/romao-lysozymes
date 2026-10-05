@@ -43,8 +43,8 @@ names(log_i_type_count) <- rownames(i_type_count)
 phy.cor <- vcv(phy, model = "Brownian", cor = T)
 diag(phy.cor) <- 0
 
-I_c.type <- Moran.I(log_i_type_count, phy.cor)
-I_i.type <- Moran.I(log_c_type_count, phy.cor)
+I_i.type <- Moran.I(log_i_type_count, phy.cor)
+I_c.type <- Moran.I(log_c_type_count, phy.cor)
 
 
 
